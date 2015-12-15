@@ -1,6 +1,5 @@
 'use strict';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import StarRating from './StarRating';
 import pkg from '../package';
 
@@ -72,7 +71,7 @@ class App extends React.Component {
             <p>{'  }'}</p>
             <p>{'});'}</p>
             <p>{' '}</p>
-            <p>{'ReactDOM.render(<FormComponent />, document.getElementById(\'star-rating\'));'}</p>
+            <p>{'React.render(<FormComponent />, document.getElementById(\'star-rating\'));'}</p>
           </code>
           <h2>Options</h2>
           <hr/>
@@ -141,4 +140,4 @@ class App extends React.Component {
 
 }
 
-ReactDOM.render(<App />, inject);
+React.render(<App />, inject);
